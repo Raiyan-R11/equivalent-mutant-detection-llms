@@ -1,10 +1,10 @@
 import os
 
-os.system("CUDA_VISIBLE_DEVICES=0 python run_longformer.py \
+os.system("CUDA_VISIBLE_DEVICES=0 python run.py \
         --output_dir=../saved_models/MutantEq \
-        --config_name=allenai/longformer-base-4096\
+        --config_name=allenai/longformer-base-4096 \
         --model_name_or_path=allenai/longformer-base-4096 \
-        --tokenizer_name=allenai/longformer-base-4096\
+        --tokenizer_name=allenai/longformer-base-4096 \
         --requires_grad 0 \
         --do_test \
         --code_db_file=../../dataset/EFSM_single/code_db.csv \

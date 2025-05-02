@@ -1,13 +1,13 @@
 import os
 
 os.system("CUDA_VISIBLE_DEVICES=0 python run.py \
-        --output_dir=saved_models/MutantEq \
+        --output_dir=../saved_models/MutantEq \
         --config_name=uclanlp/plbart-base \
         --model_name_or_path=uclanlp/plbart-base \
         --tokenizer_name=uclanlp/plbart-base \
-        --requires_grad 1 \
+        --requires_grad 0 \
         --do_train \
-        --code_db_file=../../dataset/EFSM_single/code_clean.csv \
+        --code_db_file=../../dataset/EFSM_single/code_db.csv \
         --train_data_file=../../dataset/EFSM_single/pairwise_train.csv \
         --eval_data_file=../../dataset/EFSM_single/pairwise_test.csv \
         --test_data_file=../../dataset/EFSM_single/pairwise_test.csv 2>&1")

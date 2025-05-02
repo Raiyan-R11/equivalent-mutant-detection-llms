@@ -13,7 +13,7 @@ from tqdm import tqdm
 from torch.optim import AdamW
 from transformers import RobertaConfig, RobertaTokenizer, RobertaForSequenceClassification
 from transformers import AutoTokenizer, AutoConfig, AutoModelForSequenceClassification
-from model_longformer import Model
+from model import Model
 
 cpu_cont = 16
 logger = logging.getLogger(__name__)

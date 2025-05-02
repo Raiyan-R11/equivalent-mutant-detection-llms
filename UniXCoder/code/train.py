@@ -1,7 +1,7 @@
 import os
 
 os.system("CUDA_VISIBLE_DEVICES=0 python run.py \
-        --output_dir=saved_models/MutantEq \
+        --output_dir=../saved_models/MutantEq \
         --config_name=microsoft/unixcoder-base\
         --model_name_or_path=microsoft/unixcoder-base \
         --tokenizer_name=microsoft/unixcoder-base\
